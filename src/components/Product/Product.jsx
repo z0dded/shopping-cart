@@ -11,10 +11,7 @@ import {
 export const Product = ({ title, description, price, currentItem }) => {
   const { cart, setCart } = useCart();
 
-  const handleAddToCart = item => {
-    setCart(prev => [...prev, item]);
-    console.log(cart);
-  };
+  const handleAddToCart = item => setCart(prev => [...prev, item]);
 
   return (
     <ProductContainer>

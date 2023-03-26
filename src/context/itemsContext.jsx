@@ -14,6 +14,5 @@ export function ItemsContextProvider({ children }) {
 }
 
 export function useItems() {
-  const context = useContext(ItemsContext);
-  return context;
+  return useContext(ItemsContext);
 }
